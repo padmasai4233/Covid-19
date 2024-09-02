@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona API</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header id="header">
+        <h1 id="header-head">Covid-19 Situation</h1>
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider"></span>
+        </label>
+        <div id="clock"></div>
+    </header>
+    <main>
+        <p id="matter"><marquee behavior="" direction=""><mark>COVID-19 is a highly contagious virus that has caused a global pandemic, leading to widespread illness, death, and significant social and economic disruption.</mark></marquee></p>
+        <div id="layout">
+            <img src="https://scontent.fbpm3-1.fna.fbcdn.net/v/t1.6435-9/91280381_2999380820104732_7870421063320993792_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=byWTe2bg-zAQ7kNvgEroO7Y&_nc_ht=scontent.fbpm3-1.fna&oh=00_AYAn1xDN2F2Pnv5B-Boe3sBxdZis6DZYINEsIsCuMabRSw&oe=66F6C76A" alt="" id="image">
+            <div id="sidelayout">
+                <h1 id="heading">Overall Situation:</h1>
+                <div id="boxes">
+                    <div id="cases-box">
+                        <h1 id="num-1"></h1>
+                        <h6>Cases</h6>
+                    </div>
+                    <div id="deaths-box">
+                        <h1 id="num-2"></h1>
+                        <h6>Deaths</h6>
+                    </div>
+                    <div id="recovery-box">
+                        <h1 id="num-3"></h1>
+                        <h6>Recovery</h6>
+                    </div>
+                </div>
+                <button type="submit" id="refresh-btn">Refresh</button>
+                <div id="drop-down">
+                    <select name="" id="states">
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala***">Kerala***</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    <button id="drop-down-btn" type="submit">Submit</button>
+                </div>
+                <h1 id="heading1"></h1>
+                <ul id="state-boxes">
+                </ul>
+            </div>
+        </div>
+        <div id="frame3">
+            <div id="down-layout">
+                <img id="down-image" src="https://th.bing.com/th/id/R.42aa411742fcfca1b01cb549b5201d3c?rik=xm9%2fkEiUXS4rXA&riu=http%3a%2f%2fblogs.biomedcentral.com%2fon-health%2fwp-content%2fuploads%2fsites%2f8%2f2020%2f06%2fcorona-5174671_1920.jpg&ehk=6yOHNLYUVvN9OH0LpyJYYB6zhNWNE1%2fTOxjnU%2fxUmEA%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <div id="time-change">
+                    <h1 id="time-state-name"></h1>
+                    <div id="time-boxes">
+                        <div id="time-case-box">
+                            <h1 id="num-6"></h1>
+                            <h6>Deaths</h6>
+                        </div>
+                        <div id="time-death-box">
+                            <h1 id="num-7"></h1>
+                            <h6>Recovery</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+		<div id="footer-layout">
+			<div id="footer-links">
+				<a id="work-mail" href="mailto:padmasaigorrela@gmail.com"><i class='bx bxl-gmail'></i>
+				</a>
+				<a id="work-linkdin" href="https://www.linkedin.com/in/padmasaigorrela/"><i class='bx bxl-linkedin-square'></i></a>
+				<a id="footer-insta" href="#"><i class='bx bxl-instagram'></i></a>
+				<a id="footer-what" href="https://wa.me/+917989006659"><i class='bx bxl-whatsapp'></i></a>
+			</div>
+			<p id="copyright">&copy CopyRight 2024 Padma Sai. All Rights Reserved</p>
+		</div>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script copy.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
